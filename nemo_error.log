@@ -1,0 +1,50 @@
+ERROR 31/Dec/2023 15:26:23 log 20560 9616 Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\shawn\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\shawn\AppData\Local\Programs\Python\Python310\lib\site-packages\django\utils\deprecation.py", line 116, in __call__
+    response = self.process_request(request)
+  File "C:\Users\shawn\Downloads\NEMO_QNFCF\NEMO\middleware.py", line 39, in process_request
+    super().process_request(request)
+  File "C:\Users\shawn\AppData\Local\Programs\Python\Python310\lib\site-packages\django\contrib\auth\middleware.py", line 49, in process_request
+    raise ImproperlyConfigured(
+django.core.exceptions.ImproperlyConfigured: The Django remote user auth middleware requires the authentication middleware to be installed.  Edit your MIDDLEWARE setting to insert 'django.contrib.auth.middleware.AuthenticationMiddleware' before the RemoteUserMiddleware class.
+ERROR 31/Dec/2023 15:26:23 basehttp 20560 9616 "GET / HTTP/1.1" 500 80961
+ERROR 31/Dec/2023 15:26:24 log 20560 17416 Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "C:\Users\shawn\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\shawn\AppData\Local\Programs\Python\Python310\lib\site-packages\django\utils\deprecation.py", line 116, in __call__
+    response = self.process_request(request)
+  File "C:\Users\shawn\Downloads\NEMO_QNFCF\NEMO\middleware.py", line 39, in process_request
+    super().process_request(request)
+  File "C:\Users\shawn\AppData\Local\Programs\Python\Python310\lib\site-packages\django\contrib\auth\middleware.py", line 49, in process_request
+    raise ImproperlyConfigured(
+django.core.exceptions.ImproperlyConfigured: The Django remote user auth middleware requires the authentication middleware to be installed.  Edit your MIDDLEWARE setting to insert 'django.contrib.auth.middleware.AuthenticationMiddleware' before the RemoteUserMiddleware class.
+ERROR 31/Dec/2023 15:26:24 basehttp 20560 17416 "GET /favicon.ico HTTP/1.1" 500 80880
+WARNING 31/Dec/2023 15:27:11 basehttp 11480 2604 "GET /login/?next=/ HTTP/1.1" 400 46
+WARNING 31/Dec/2023 15:27:11 basehttp 11480 2604 "GET /favicon.ico HTTP/1.1" 404 41058
+WARNING 31/Dec/2023 15:27:17 basehttp 11480 2604 "GET /login/?next=/ HTTP/1.1" 400 46
+WARNING 31/Dec/2023 15:28:24 basehttp 13244 19060 "GET /login/?next=/ HTTP/1.1" 400 46
+WARNING 31/Dec/2023 15:28:28 basehttp 13244 19060 "GET /login/?next=/ HTTP/1.1" 400 46
+WARNING 31/Dec/2023 15:28:55 basehttp 13244 19060 "GET /login/?next=/ HTTP/1.1" 400 46
+ERROR 31/Dec/2023 15:30:31 log 18544 7340 Internal Server Error: /login/
+Traceback (most recent call last):
+  File "C:\Users\shawn\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\shawn\AppData\Local\Programs\Python\Python310\lib\site-packages\django\utils\deprecation.py", line 116, in __call__
+    response = self.process_request(request)
+  File "C:\Users\shawn\AppData\Local\Programs\Python\Python310\lib\site-packages\django\contrib\auth\middleware.py", line 17, in process_request
+    assert hasattr(request, 'session'), (
+AssertionError: The Django authentication middleware requires session middleware to be installed. Edit your MIDDLEWARE setting to insert 'django.contrib.sessions.middleware.SessionMiddleware' before 'django.contrib.auth.middleware.AuthenticationMiddleware'.
+ERROR 31/Dec/2023 15:30:31 basehttp 18544 7340 "GET /login/?next=/ HTTP/1.1" 500 77308
+WARNING 31/Dec/2023 15:31:02 basehttp 17416 16456 "GET /login/?next=/ HTTP/1.1" 400 46
+WARNING 31/Dec/2023 15:32:14 basehttp 16232 17640 "GET /login/?next=/ HTTP/1.1" 400 46
+WARNING 31/Dec/2023 15:33:13 basehttp 14596 4672 "GET /login/?next=/ HTTP/1.1" 400 46
+WARNING 31/Dec/2023 15:33:33 basehttp 14596 4672 "GET /login/?next=/ HTTP/1.1" 400 46
+WARNING 31/Dec/2023 15:35:09 basehttp 5104 14752 "GET /login/?next=/ HTTP/1.1" 400 46
+WARNING 31/Dec/2023 15:35:18 basehttp 5104 21236 "GET /login/?next=/ HTTP/1.1" 400 46
+WARNING 31/Dec/2023 15:35:18 basehttp 5104 21236 "GET /favicon.ico HTTP/1.1" 404 41058
+ERROR 31/Dec/2023 15:41:12 basehttp 7204 14444 You're accessing the development server over HTTPS, but it only supports HTTP.
+
+WARNING 31/Dec/2023 15:44:00 basehttp 7204 20016 "POST /api/reservations/ HTTP/1.1" 400 49
